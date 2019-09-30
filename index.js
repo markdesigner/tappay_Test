@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // defaults to 'TW'
             countryCode: 'TW'
         })
+        console.log(111)
     
         TPDirect.paymentRequestApi.setupPaymentRequest(data, function (result) {
             console.log('TPDirect.paymentRequestApi.setupPaymentRequest.result', result)
@@ -99,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('support').textContent = '裝置支援 PaymentRequest / Apple Pay'
     }
     else {
+        console.log(112);
         $('.support').removeClass("info").addClass("error")
         document.getElementById('support').textContent = '裝置不支援 PaymentRequest / Apple Pay'
     }
