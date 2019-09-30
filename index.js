@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     var pay_button
+    console.log(TPDirect.paymentRequestApi);
+    console.log(TPDirect.paymentRequestApi.checkAvailability())
     if (TPDirect.paymentRequestApi.checkAvailability()) {
         
         var data = {
